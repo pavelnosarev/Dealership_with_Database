@@ -1,10 +1,11 @@
-package com.pn;
+package com.yearup.dealership;
 
 public class Vehicle {
     private String VIN;
     private boolean sold;
     private String color;
     private String vehicleType;
+    private String dealershipName;
 
     public Vehicle(String VIN, boolean sold, String color, String vehicleType) {
         this.VIN = VIN;
@@ -45,6 +46,14 @@ public class Vehicle {
         this.vehicleType = vehicleType;
     }
 
+    public String getDealershipName() {
+        return dealershipName;
+    }
+
+    public void setDealershipName(String dealershipName) {
+        this.dealershipName = dealershipName;
+    }
+
     @Override
     public String toString() {
         return "Vehicle{" +
@@ -52,6 +61,7 @@ public class Vehicle {
                 ", sold=" + sold +
                 ", color='" + color + '\'' +
                 ", vehicleType='" + vehicleType + '\'' +
+                ", dealershipName='" + dealershipName + '\'' +
                 '}';
     }
 }
